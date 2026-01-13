@@ -23,7 +23,7 @@ pipeline {
                 bat '''
                 findstr READY=true check.txt > nul
                 if errorlevel 1 (
-                    echo Validation failed
+                    echo Validation Failed
                     exit 1
                 ) else (
                     echo Validation passed
